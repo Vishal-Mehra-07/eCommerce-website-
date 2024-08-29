@@ -292,13 +292,13 @@ header .cart-icon #cart-count {
 
 .cart-item-details h4 {
     font-size: 18px;
-    color: #333;
+    color: #0099cc;
     margin-bottom: 5px;
 }
 
 .cart-item-details p {
     font-size: 14px;
-    color: #555;
+    color: #0099cc;
 }
 
 .cart-item-price {
