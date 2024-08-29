@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InnovateTech</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcuticon" type="x-icon" href="https://www.flaticon.com/free-icon-font/shopping-cart_3916627?related_id=3916627">
+</head>
+<body>
+
+    <!-- Registration Modal -->
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Register</h2>
+            <form id="registerForm">
+                <label for="regName">Name:</label>
+                <input type="text" id="regName" name="name" required>
+
+                <label for="regEmail">Email:</label>
+                <input type="email" id="regEmail" name="email" required>
+
+                <label for="regPassword">Password:</label>
+                <input type="password" id="regPassword" name="password" required>
+
+                <label for="regConfirmPassword">Confirm Password:</label>
+                <input type="password" id="regConfirmPassword" name="confirmPassword" required>
+
+                <button type="submit" class="btn">Register</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Login</h2>
+            <form id="loginForm">
+                <label for="loginEmail">Email:</label>
+                <input type="email" id="loginEmail" name="email" required>
+
+                <label for="loginPassword">Password:</label>
+                <input type="password" id="loginPassword" name="password" required>
+
+                <button type="submit" class="btn">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <header>
+        <div class="container">
+            <h1 class="logo">InnovateTech</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#cart">Cart</a></li>
+                </ul>
+            </nav>
+            <div class="user-auth">
+                <button id="loginBtn" class="btn">Login</button>
+                <button id="registerBtn" class="btn">Register</button>
+            </div>
+            
+        </div>
+    </header>
+
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h2>Welcome to InnovateTech</h2>
+            <p>Your one-stop shop for all things tech</p>
+            <a href="#products" class="btn">Shop Now</a>
+        </div>
+    </section>
+
+    <section id="products" class="products-section">
+        <div class="container">
+            <h2>Products</h2>
+            <div id="product-list" class="product-list">
+                <!-- Products will be dynamically inserted here by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews" class="reviews-section">
+        <div class="container">
+            <h2>Reviews</h2>
+            <div id="reviews-list" class="reviews-list">
+                <!-- Reviews will be dynamically inserted here by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <section id="cart" class="cart-section">
+        <div class="container">
+            <h2>Your Cart</h2>
+            <div id="cart-items" class="cart-items">
+                <!-- Cart items will be dynamically inserted here by JavaScript -->
+            </div>
+            <div class="cart-summary">
+                <p>Total: ₹<span id="cart-total">0.00</span></p>
+                <button id="checkout-btn" class="btn">Checkout</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 InnovateTech. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="new.js"></script>
+</body>
+</html>
